@@ -6,5 +6,8 @@
   "typings": "delay.ts",
   "repository": "https://github.com/zengfenfei/delay",
   "author": "Kevin Zeng <zengfenfei@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^7.0.5"
+  }
 }

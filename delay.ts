@@ -1,17 +1,17 @@
-export default function delay(ms: number, result?) {
+export default function delay<T>(ms: number, result?: T): Promise<T> {
     return new Promise((resolve, reject) => setTimeout(resolve, ms, result));
 }
 
-export function reject(ms: number, error?) {
+export function delayReject(ms: number, error?) {
     return new Promise((resolve, reject) => setTimeout(reject, ms, error));
 }
 
-// Helper functions for then
+// Helper functions for then and catch
 
-export function delayFunc(ms: number) {
+export function delayThen(ms: number) {
     return result => delay(ms, result);
 }
 
-export function delayRejectFunc(ms: number) {
-    return error => reject(ms, error);
+export function delayCatch(ms: number) {
+    return error => delayReject(ms, error);
 }
