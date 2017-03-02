@@ -1,0 +1,10 @@
+{
+  "name": "delay.ts",
+  "version": "1.0.0",
+  "description": "Promise version of setTimeout",
+  "main": "delay.js",
+  "typings": "delay.ts",
+  "repository": "https://github.com/zengfenfei/delay",
+  "author": "Kevin Zeng <zengfenfei@gmail.com>",
+  "license": "MIT"
+}
