@@ -6,7 +6,8 @@
     },
     "files": [
         "delay.ts",
-        "test.ts"
+        "test.ts",
+        "demo.ts"
     ],
     "compileOnSave": true
 }

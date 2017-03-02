@@ -6,7 +6,7 @@ export function delayReject(ms: number, error?) {
     return new Promise((resolve, reject) => setTimeout(reject, ms, error));
 }
 
-// Helper functions for then and catch
+// Helper functions for then and catch. It's inspired by https://github.com/sindresorhus/delay.
 
 export function delayThen(ms: number) {
     return result => delay(ms, result);
